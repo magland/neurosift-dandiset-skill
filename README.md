@@ -12,10 +12,27 @@ Unlike the hosted Dandiset Explorer app, this skill runs Python **locally** via
 Claude's Bash tool — no server or API key. It only needs Python 3 with the
 scientific NWB stack installed (see below).
 
-> For **finding or searching across many** dandisets / OpenNeuro / EBRAINS
-> datasets, use the companion
-> [neurosift-datasets](https://github.com/magland/neurosift-datasets-skill)
-> skill. This skill is for going deep on one dandiset you already have in hand.
+## The Neurosift skill family
+
+This is one of three Claude skills that work together for neuroscience data on
+the DANDI Archive (and, for search, OpenNeuro / EBRAINS). Install whichever you
+need — they complement each other:
+
+- **[neurosift-datasets](https://github.com/magland/neurosift-datasets-skill)** —
+  find, filter, rank, and count datasets **across** DANDI, OpenNeuro, and
+  EBRAINS, and check which neurodata types a file has. *Discovery across many
+  datasets.*
+- **[neurosift-dandiset](https://github.com/magland/neurosift-dandiset-skill)**
+  *(this skill)* — deep-dive a **single** dandiset or NWB file and load /
+  visualize / analyze its data in Python by streaming the remote file. *Depth on
+  one file.*
+- **[neurosift-links](https://github.com/magland/neurosift-links-skill)** — build
+  **neurosift.app** URLs that open a dandiset, an NWB file, or a specific
+  object/visualization in the interactive web viewer. *Clickable views to share.*
+
+Typical flow: **datasets** → **dandiset** → **links** (discover, then analyze,
+then share an interactive view). Use this one to go deep on a dandiset you
+already have in hand.
 
 ## What it can do
 

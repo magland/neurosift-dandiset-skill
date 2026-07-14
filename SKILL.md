@@ -26,6 +26,28 @@ Stay on topic: DANDI, dandisets, and NWB. If asked something unrelated, politely
 decline. Do not volunteer information about *other* dandisets. Be concise, use
 markdown, and be scientifically formal (no emojis).
 
+## Companion skills
+
+This is one of three Neurosift skills that work together — for neuroscience data
+on the DANDI Archive (plus OpenNeuro / EBRAINS for search):
+
+- **neurosift-datasets** — find, filter, rank, and count datasets **across**
+  DANDI, OpenNeuro, and EBRAINS, and see which neurodata types (Units,
+  ElectricalSeries, …) a file contains. *Discovery across many datasets.*
+- **neurosift-dandiset** *(this skill)* — deep-dive a **single** dandiset or NWB
+  file: read its metadata, inspect its contents, and load / visualize / analyze
+  the data in Python by streaming the remote file. *Depth on one file.*
+- **neurosift-links** — construct **neurosift.app** URLs that open a dandiset, an
+  NWB file, or a specific object/visualization in the interactive web viewer.
+  *Clickable views to share.*
+
+Typical flow: **neurosift-datasets** (discover) → **neurosift-dandiset**
+(analyze) → **neurosift-links** (share an interactive view); each also works on
+its own. Use this skill to go deep on one file; reach for **neurosift-datasets**
+to *find* dandisets/files across archives, and **neurosift-links** to turn any
+file or object into a clickable Neurosift view (its URL patterns are richer than
+the simple `?path=` link below).
+
 ## Setup: check dependencies first
 
 Run once at the start of a session:
