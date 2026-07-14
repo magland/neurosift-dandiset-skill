@@ -1,0 +1,12 @@
+# Python packages this skill needs for loading and visualizing NWB data.
+# Install with:  python3 -m pip install -r requirements.txt
+# (Ask the user before installing into their environment.)
+numpy
+matplotlib
+h5py
+remfile
+pynwb
+dandi
+# The usage-script generator behind scripts/get_nwbfile_info.py.
+# Not on PyPI — installs from source.
+get-nwbfile-info @ git+https://github.com/rly/get-nwbfile-info
